@@ -1,0 +1,3 @@
+﻿Minicurso ASP .NET Core 2.0 - Criando uma Web API
+
+https://www.youtube.com/watch?v=li_vY4vJbA4
