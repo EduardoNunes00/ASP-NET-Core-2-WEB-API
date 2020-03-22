@@ -15,5 +15,7 @@ namespace ProjetoN.Models
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+
+
     }
 }

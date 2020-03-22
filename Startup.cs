@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ProjetoN.Models;
+using ProjetoN.Repositorio;
 
 namespace ProjetoN
 {
@@ -29,6 +30,7 @@ namespace ProjetoN
         {
             services.AddDbContext<ProjectContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
